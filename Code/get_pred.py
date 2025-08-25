@@ -28,19 +28,17 @@ alpha = 1  # 控制概率图的截断位置
 args = SimpleNamespace(
     # 你的训练权重路径
     train_path=
-    '''/data/disk8T2/caobr/202507GAVE/GAVE-main/Log/GAVE_test20250817-234632_SMPGAVENetV3_lr1e-04_RRLoss-BTCB3Loss_bc16/''',
+    '''../Log/task1_2/''',
     # images_path='../Data/GAVE/validation/images',  # 验证图像路径
     # masks_path='../Data/GAVE/validation/masks',      # 掩码路径
-    # images_path='/data/disk8T2/lincy/Lincy2025/GAVE-main/Data/GAVE_enhanced/validation_enhanced/images',  # 验证图像路径
-    # masks_path='/data/disk8T2/lincy/Lincy2025/GAVE-main/Data/GAVE_enhanced/validation_enhanced/masks',      # 掩码路径
-    # images_path='/home/caobr/caobr/202507GAVE/GAVE-main/Data-enhanced/GAVE/validation_enhanced/images',  # 验证图像路径
-    # masks_path='/data/disk8T2/caobr/202507GAVE/GAVE-main/Data-enhanced/GAVE/validation_enhanced/masks',      # 掩码路径
-    # images_path='/home/caobr/caobr/202507GAVE/GAVE-main/Data-enhanced/GAVE/training/images',  # 验证图像路径
-    # masks_path='/data/disk8T2/caobr/202507GAVE/GAVE-main/Data-enhanced/GAVE/training/masks',  # 掩码路径
-    images_path='/home/caobr/caobr/202507GAVE/GAVE-main/Data-enhanced/GAVE/41-50/images',  # 验证图像路径
-    masks_path='/data/disk8T2/caobr/202507GAVE/GAVE-main/Data-enhanced/GAVE/41-50/masks',  # 掩码路径
+    images_path='../Data-enhanced/GAVE/validation_enhanced/images',  # 验证图像路径
+    masks_path='../Data-enhanced/GAVE/validation_enhanced/masks',      # 掩码路径
+    # images_path='../Data-enhanced/GAVE/training/images',  # 验证图像路径
+    # masks_path='../Data-enhanced/GAVE/training/masks',  # 掩码路径
+    # images_path='../Data-enhanced/GAVE/41-50/images',  # 验证图像路径
+    # masks_path='../Data-enhanced/GAVE/41-50/masks',  # 掩码路径
     alpha=alpha,  # 控制概率图的截断位置
-    test_name='val2',  # 本次预测任务名称
+    test_name='test',  # 本次预测任务名称
     gpu_id=0,  # 使用的GPU编号
     temperature=1,  # 控制概率图的高低，小于1会提升整体的预测概率
     logit_bias=0,  # 控制概率图的高低，正数会提升整体的预测概率

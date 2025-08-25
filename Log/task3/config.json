@@ -1,0 +1,21 @@
+{
+    "gpu_id": 0,
+    "dataset": "GAVE",
+    "model": "SMPUNet",
+    "base_criterion": null,
+    "criterion": "BTCB3Loss",
+    "learning_rate": 0.0001,
+    "in_channels": 3,
+    "out_channels": 3,
+    "base_channels": 16,
+    "num_iterations": 5,
+    "encoder_name": "resnet50",
+    "encoder_weights": null,
+    "encoder_depth": 5,
+    "num_folds": 2,
+    "num_epochs": null,
+    "n_proc": 1,
+    "data_folder": "../Data-enhanced",
+    "version": "test20250813-155028",
+    "seed": 3
+}
